@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\DonkeyKong_USFX.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{692DC6D5-6D8A-4FE4-8DC3-E01E26C2ED94}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\DonkeyKong_USFX.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\DonkeyKong_USFXEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\.gitattributes" />
+    <None Include="..\..\.gitignore" />
+    <None Include="..\..\DonkeyKong_USFX.png" />
+    <Filter Include="Config">
+      <UniqueIdentifier>{FD748673-87F7-4BD5-AE49-36666EC52DFF}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\DonkeyKong_USFX">
+      <UniqueIdentifier>{3D11D782-9B42-4125-B48B-B3A2E054B972}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\DonkeyKong_USFX\DonkeyKong_USFX.Build.cs">
+      <Filter>Source\DonkeyKong_USFX</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\DonkeyKong_USFX\DonkeyKong_USFX.cpp">
+      <Filter>Source\DonkeyKong_USFX</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\DonkeyKong_USFX\DonkeyKong_USFX.h">
+      <Filter>Source\DonkeyKong_USFX</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\DonkeyKong_USFX\DonkeyKong_USFXCharacter.cpp">
+      <Filter>Source\DonkeyKong_USFX</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\DonkeyKong_USFX\DonkeyKong_USFXCharacter.h">
+      <Filter>Source\DonkeyKong_USFX</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\DonkeyKong_USFX\DonkeyKong_USFXGameMode.cpp">
+      <Filter>Source\DonkeyKong_USFX</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\DonkeyKong_USFX\DonkeyKong_USFXGameMode.h">
+      <Filter>Source\DonkeyKong_USFX</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\DonkeyKong_USFX\EnemigoDragon.cpp">
+      <Filter>Source\DonkeyKong_USFX</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\DonkeyKong_USFX\EnemigoDragon.h">
+      <Filter>Source\DonkeyKong_USFX</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\DonkeyKong_USFX\IState.cpp">
+      <Filter>Source\DonkeyKong_USFX</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\DonkeyKong_USFX\IState.h">
+      <Filter>Source\DonkeyKong_USFX</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\DonkeyKong_USFX\StateAgresivo.cpp">
+      <Filter>Source\DonkeyKong_USFX</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\DonkeyKong_USFX\StateAgresivo.h">
+      <Filter>Source\DonkeyKong_USFX</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\DonkeyKong_USFX\StatePasivo.cpp">
+      <Filter>Source\DonkeyKong_USFX</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\DonkeyKong_USFX\StatePasivo.h">
+      <Filter>Source\DonkeyKong_USFX</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
