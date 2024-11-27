@@ -35,7 +35,7 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 	void SetEnemigo(class AEnemigoDragon* _enemigo) override;
-	FString GetEstado() override;
+	virtual FString GetEstado() override;
 	void atacar() override;
 	void moverse() override;
 	void RecuperarEnergia() override {};

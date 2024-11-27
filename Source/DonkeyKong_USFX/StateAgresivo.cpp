@@ -5,6 +5,7 @@
 #include "Kismet/GameplayStatics.h"
 #include "EnemigoDragon.h"
 
+
 // Sets default values
 AStateAgresivo::AStateAgresivo()
 {
@@ -50,7 +51,8 @@ FString AStateAgresivo::GetEstado()
 
 void AStateAgresivo::atacar()
 {
-    if (Jugador) {
+    
+    if (Jugador && enemigo) {
       FVector Direccion = (Jugador->GetActorLocation() - enemigo->GetActorLocation()).GetSafeNormal();
       FVector Posicion = enemigo->GetActorLocation() + (Direccion * 30.0f);
       enemigo->SetActorLocation(Posicion);
@@ -61,7 +63,7 @@ void AStateAgresivo::atacar()
       enemigo->SetActorRotation(Rotacion);
       GetWorld()->GetTimerManager().SetTimer(ataque, this, &AStateAgresivo::atacar, 0.009f, true);
     }
-    if (Jugador) {
+    if (Jugador && enemigo) {
         FVector JugadorPosicion = Jugador->GetActorLocation();
         FVector PosicionEnemigo = enemigo->GetActorLocation();
         float Distancia = FVector::Dist(PosicionEnemigo, JugadorPosicion);
@@ -102,10 +104,10 @@ void AStateAgresivo::moverse()
 
 void AStateAgresivo::PerderEnergia()
 {
-    if (enemigo->GetEnergia() >= 10) {
+    if (enemigo && enemigo->GetEnergia() >= 10) {
         enemigo->PerderEnergia();
 	}
-    else {
+    else if (enemigo) {
         GetWorld()->GetTimerManager().ClearTimer(ataque);
         enemigo->EstablecerEstado(enemigo->GetEstadoPasivo());
     }

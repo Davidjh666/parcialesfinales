@@ -50,11 +50,12 @@ void AStatePasivo::moverse()
 
 void AStatePasivo::RecuperarEnergia()
 {
-	if (enemigo->GetEnergia()<=100) {
+	if (enemigo && enemigo->GetEnergia()<=100) {
 		enemigo->RecuperarEnergia();
 	}
-	else {
+	else if (enemigo){
 		GetWorld()->GetTimerManager().ClearTimer(energia);
 		enemigo->EstablecerEstado(enemigo->GetEstadoAgresivo());
 	}
+	
 }
