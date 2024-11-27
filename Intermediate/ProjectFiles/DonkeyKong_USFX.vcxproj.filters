@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\DonkeyKong_USFX.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{692DC6D5-6D8A-4FE4-8DC3-E01E26C2ED94}</UniqueIdentifier>
+      <UniqueIdentifier>{537360AE-441B-4D3D-9CEF-61381CDD8FBD}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\DonkeyKong_USFX.Target.cs">
       <Filter>Source</Filter>
@@ -14,8 +14,9 @@
     <None Include="..\..\.gitattributes" />
     <None Include="..\..\.gitignore" />
     <None Include="..\..\DonkeyKong_USFX.png" />
+    <None Include="..\..\README.md" />
     <Filter Include="Config">
-      <UniqueIdentifier>{FD748673-87F7-4BD5-AE49-36666EC52DFF}</UniqueIdentifier>
+      <UniqueIdentifier>{B8100125-58A5-4675-999F-F0E63A3C7AC3}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -33,8 +34,14 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\DonkeyKong_USFX">
-      <UniqueIdentifier>{3D11D782-9B42-4125-B48B-B3A2E054B972}</UniqueIdentifier>
+      <UniqueIdentifier>{E7F79B5A-5FFA-42F1-8C85-EEE515D3A5E3}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\DonkeyKong_USFX\AStateContainer.cpp">
+      <Filter>Source\DonkeyKong_USFX</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\DonkeyKong_USFX\AStateContainer.h">
+      <Filter>Source\DonkeyKong_USFX</Filter>
+    </ClInclude>
     <None Include="..\..\Source\DonkeyKong_USFX\DonkeyKong_USFX.Build.cs">
       <Filter>Source\DonkeyKong_USFX</Filter>
     </None>
@@ -72,6 +79,12 @@
       <Filter>Source\DonkeyKong_USFX</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\DonkeyKong_USFX\StateAgresivo.h">
+      <Filter>Source\DonkeyKong_USFX</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\DonkeyKong_USFX\StateContainer.cpp">
+      <Filter>Source\DonkeyKong_USFX</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\DonkeyKong_USFX\StateContainer.h">
       <Filter>Source\DonkeyKong_USFX</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\DonkeyKong_USFX\StatePasivo.cpp">

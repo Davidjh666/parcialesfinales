@@ -9,36 +9,36 @@
 // Sets default values
 AStateAgresivo::AStateAgresivo()
 {
- 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
-	PrimaryActorTick.bCanEverTick = true;
+    // Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
+    PrimaryActorTick.bCanEverTick = true;
 
 }
 
 // Called when the game starts or when spawned
 void AStateAgresivo::BeginPlay()
 {
-	Super::BeginPlay();
+    Super::BeginPlay();
     Jugador = UGameplayStatics::GetPlayerPawn(GetWorld(), 0);
     vigilar = true;
-	incremento = 6.0f;
-	tiempo = 0.0f;
+    incremento = 6.0f;
+    tiempo = 0.0f;
 }
 
 // Called every frame
 void AStateAgresivo::Tick(float DeltaTime)
 {
-	Super::Tick(DeltaTime);
-	tiempo += DeltaTime;
-	if (tiempo >= 1) {
-		PerderEnergia();
-		tiempo = 0;
-	}  
+    Super::Tick(DeltaTime);
+    tiempo += DeltaTime;
+    if (tiempo >= 1) {
+        PerderEnergia();
+        tiempo = 0;
+    }
 
 }
 
 void AStateAgresivo::SetEnemigo(AEnemigoDragon* _enemigo)
 {
-	enemigo = _enemigo;
+    enemigo = _enemigo;
     PosicionInicial = enemigo->GetActorLocation();
     LimiteInicial = PosicionInicial + FVector(0, 2000, 0);
     LimiteFinal = PosicionInicial + FVector(0, -2000, 0);
@@ -46,22 +46,22 @@ void AStateAgresivo::SetEnemigo(AEnemigoDragon* _enemigo)
 
 FString AStateAgresivo::GetEstado()
 {
-	return "El Dragon se encuentra en estado agresivo. corre!!!!!!";
+    return "El Dragon se encuentra en estado agresivo. corre!!!!!!";
 }
 
 void AStateAgresivo::atacar()
 {
-    
+
     if (Jugador && enemigo) {
-      FVector Direccion = (Jugador->GetActorLocation() - enemigo->GetActorLocation()).GetSafeNormal();
-      FVector Posicion = enemigo->GetActorLocation() + (Direccion * 30.0f);
-      enemigo->SetActorLocation(Posicion);
-      FRotator Rotacion = Direccion.Rotation();
-      Rotacion.Pitch = 0.0f;
-      Rotacion.Roll = 0.0f;
-      Rotacion.Yaw > 0 ? Rotacion.Yaw = 0 : Rotacion.Yaw = 180;
-      enemigo->SetActorRotation(Rotacion);
-      GetWorld()->GetTimerManager().SetTimer(ataque, this, &AStateAgresivo::atacar, 0.009f, true);
+        FVector Direccion = (Jugador->GetActorLocation() - enemigo->GetActorLocation()).GetSafeNormal();
+        FVector Posicion = enemigo->GetActorLocation() + (Direccion * 30.0f);
+        enemigo->SetActorLocation(Posicion);
+        FRotator Rotacion = Direccion.Rotation();
+        Rotacion.Pitch = 0.0f;
+        Rotacion.Roll = 0.0f;
+        Rotacion.Yaw > 0 ? Rotacion.Yaw = 0 : Rotacion.Yaw = 180;
+        enemigo->SetActorRotation(Rotacion);
+        GetWorld()->GetTimerManager().SetTimer(ataque, this, &AStateAgresivo::atacar, 0.009f, true);
     }
     if (Jugador && enemigo) {
         FVector JugadorPosicion = Jugador->GetActorLocation();
@@ -95,10 +95,10 @@ void AStateAgresivo::moverse()
     enemigo->SetActorRotation(mirar);
     GetWorld()->GetTimerManager().SetTimer(ataque, this, &AStateAgresivo::moverse, 0.001f, true);
     if (Jugador) {
-		FVector JugadorPosicion = Jugador->GetActorLocation();
-		FVector PosicionEnemigo = enemigo->GetActorLocation();
+        FVector JugadorPosicion = Jugador->GetActorLocation();
+        FVector PosicionEnemigo = enemigo->GetActorLocation();
         float Distancia = FVector::Dist(PosicionEnemigo, JugadorPosicion);
-		if (Distancia < 1500.f) atacar();
+        if (Distancia < 1500.f) atacar();
     }
 }
 
@@ -106,7 +106,7 @@ void AStateAgresivo::PerderEnergia()
 {
     if (enemigo && enemigo->GetEnergia() >= 10) {
         enemigo->PerderEnergia();
-	}
+    }
     else if (enemigo) {
         GetWorld()->GetTimerManager().ClearTimer(ataque);
         enemigo->EstablecerEstado(enemigo->GetEstadoPasivo());

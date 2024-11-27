@@ -27,7 +27,7 @@ void AStateContainer::Tick(float DeltaTime)
 void AStateContainer::AddState(IIState* NewState)
 {
     States.Add(NewState);
-    if (NewState) 
+    if (NewState)
     {
         FString StateName = NewState->GetEstado(); GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Yellow, FString::Printf(TEXT("Añadiendo estado al contenedor: %s"), *StateName));
     }
@@ -44,21 +44,21 @@ void AStateContainer::ExecuteStates()
     }
 }
 
-void AStateContainer::ExecuteNextState() 
+void AStateContainer::ExecuteNextState()
 {
-    if (CurrentStateIndex < States.Num()) 
+    if (CurrentStateIndex < States.Num())
     {
-        IIState* State = States[CurrentStateIndex]; 
+        IIState* State = States[CurrentStateIndex];
         FString StateName = State->GetEstado(); // Obtener el nombre o descripción del estado
-        GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, FString::Printf(TEXT("Ejecutando estado %d: %s"), CurrentStateIndex + 1, *StateName)); 
-        
+        GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, FString::Printf(TEXT("Ejecutando estado %d: %s"), CurrentStateIndex + 1, *StateName));
+
         State->atacar(); // Ejemplo de acción, puede variar según tu implementación 
-        CurrentStateIndex++; 
+        CurrentStateIndex++;
         GetWorld()->GetTimerManager().SetTimer(StateTimerHandle, this, &AStateContainer::ExecuteNextState, 5.0f, false);
     }
-    else 
-    { 
+    else
+    {
         GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("Todos los estados han sido ejecutados."));
-    } 
+    }
 }
 

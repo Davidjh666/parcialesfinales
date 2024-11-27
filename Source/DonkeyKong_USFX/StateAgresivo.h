@@ -11,8 +11,8 @@ UCLASS()
 class DONKEYKONG_USFX_API AStateAgresivo : public AActor, public IIState
 {
 	GENERATED_BODY()
-	
-public:	
+
+public:
 	// Sets default values for this actor's properties
 	AStateAgresivo();
 
@@ -30,7 +30,7 @@ protected:
 	float incremento;
 	bool vigilar;
 
-public:	
+public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 

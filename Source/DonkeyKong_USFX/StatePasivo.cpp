@@ -7,7 +7,7 @@
 // Sets default values
 AStatePasivo::AStatePasivo()
 {
- 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
+	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
 }
@@ -16,7 +16,7 @@ AStatePasivo::AStatePasivo()
 void AStatePasivo::BeginPlay()
 {
 	Super::BeginPlay();
-	
+
 }
 
 // Called every frame
@@ -50,12 +50,12 @@ void AStatePasivo::moverse()
 
 void AStatePasivo::RecuperarEnergia()
 {
-	if (enemigo && enemigo->GetEnergia()<=100) {
+	if (enemigo && enemigo->GetEnergia() <= 100) {
 		enemigo->RecuperarEnergia();
 	}
-	else if (enemigo){
+	else if (enemigo) {
 		GetWorld()->GetTimerManager().ClearTimer(energia);
 		enemigo->EstablecerEstado(enemigo->GetEstadoAgresivo());
 	}
-	
+
 }

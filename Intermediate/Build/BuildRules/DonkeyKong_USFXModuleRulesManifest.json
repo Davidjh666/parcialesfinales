@@ -1,8 +1,8 @@
 {
 	"SourceFiles": [
-		"C:\\Users\\joelp\\Downloads\\STATE\\Source\\DonkeyKong_USFX\\DonkeyKong_USFX.Build.cs",
-		"C:\\Users\\joelp\\Downloads\\STATE\\Source\\DonkeyKong_USFX.Target.cs",
-		"C:\\Users\\joelp\\Downloads\\STATE\\Source\\DonkeyKong_USFXEditor.Target.cs"
+		"C:\\Users\\lenovo\\Desktop\\STATE_DonkeyKong_USFX--master\\Source\\DonkeyKong_USFX\\DonkeyKong_USFX.Build.cs",
+		"C:\\Users\\lenovo\\Desktop\\STATE_DonkeyKong_USFX--master\\Source\\DonkeyKong_USFX.Target.cs",
+		"C:\\Users\\lenovo\\Desktop\\STATE_DonkeyKong_USFX--master\\Source\\DonkeyKong_USFXEditor.Target.cs"
 	],
 	"EngineVersion": "4.27.2"
 }

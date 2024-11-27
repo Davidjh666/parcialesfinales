@@ -11,8 +11,8 @@ UCLASS()
 class DONKEYKONG_USFX_API AStatePasivo : public AActor, public IIState
 {
 	GENERATED_BODY()
-	
-public:	
+
+public:
 	// Sets default values for this actor's properties
 	AStatePasivo();
 
@@ -23,13 +23,13 @@ protected:
 	class AEnemigoDragon* enemigo;
 	FTimerHandle energia;
 
-public:	
+public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
 	void SetEnemigo(class AEnemigoDragon* _enemigo) override;
 	FString GetEstado() override;
-	void atacar() override;	
+	void atacar() override;
 	void moverse() override;
 	void RecuperarEnergia() override;
 	void PerderEnergia() override {};

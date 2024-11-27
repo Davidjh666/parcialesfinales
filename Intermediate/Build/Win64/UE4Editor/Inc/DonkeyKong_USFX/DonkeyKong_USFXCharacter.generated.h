@@ -13,10 +13,10 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define DONKEYKONG_USFX_DonkeyKong_USFXCharacter_generated_h
 
-#define STATE_Source_DonkeyKong_USFX_DonkeyKong_USFXCharacter_h_12_SPARSE_DATA
-#define STATE_Source_DonkeyKong_USFX_DonkeyKong_USFXCharacter_h_12_RPC_WRAPPERS
-#define STATE_Source_DonkeyKong_USFX_DonkeyKong_USFXCharacter_h_12_RPC_WRAPPERS_NO_PURE_DECLS
-#define STATE_Source_DonkeyKong_USFX_DonkeyKong_USFXCharacter_h_12_INCLASS_NO_PURE_DECLS \
+#define STATE_DonkeyKong_USFX__master_Source_DonkeyKong_USFX_DonkeyKong_USFXCharacter_h_12_SPARSE_DATA
+#define STATE_DonkeyKong_USFX__master_Source_DonkeyKong_USFX_DonkeyKong_USFXCharacter_h_12_RPC_WRAPPERS
+#define STATE_DonkeyKong_USFX__master_Source_DonkeyKong_USFX_DonkeyKong_USFXCharacter_h_12_RPC_WRAPPERS_NO_PURE_DECLS
+#define STATE_DonkeyKong_USFX__master_Source_DonkeyKong_USFX_DonkeyKong_USFXCharacter_h_12_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesADonkeyKong_USFXCharacter(); \
 	friend struct Z_Construct_UClass_ADonkeyKong_USFXCharacter_Statics; \
@@ -25,7 +25,7 @@ public: \
 	DECLARE_SERIALIZER(ADonkeyKong_USFXCharacter)
 
 
-#define STATE_Source_DonkeyKong_USFX_DonkeyKong_USFXCharacter_h_12_INCLASS \
+#define STATE_DonkeyKong_USFX__master_Source_DonkeyKong_USFX_DonkeyKong_USFXCharacter_h_12_INCLASS \
 private: \
 	static void StaticRegisterNativesADonkeyKong_USFXCharacter(); \
 	friend struct Z_Construct_UClass_ADonkeyKong_USFXCharacter_Statics; \
@@ -34,7 +34,7 @@ public: \
 	DECLARE_SERIALIZER(ADonkeyKong_USFXCharacter)
 
 
-#define STATE_Source_DonkeyKong_USFX_DonkeyKong_USFXCharacter_h_12_STANDARD_CONSTRUCTORS \
+#define STATE_DonkeyKong_USFX__master_Source_DonkeyKong_USFX_DonkeyKong_USFXCharacter_h_12_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API ADonkeyKong_USFXCharacter(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ADonkeyKong_USFXCharacter) \
@@ -47,7 +47,7 @@ private: \
 public:
 
 
-#define STATE_Source_DonkeyKong_USFX_DonkeyKong_USFXCharacter_h_12_ENHANCED_CONSTRUCTORS \
+#define STATE_DonkeyKong_USFX__master_Source_DonkeyKong_USFX_DonkeyKong_USFXCharacter_h_12_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API ADonkeyKong_USFXCharacter(ADonkeyKong_USFXCharacter&&); \
@@ -58,7 +58,7 @@ public: \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ADonkeyKong_USFXCharacter)
 
 
-#define STATE_Source_DonkeyKong_USFX_DonkeyKong_USFXCharacter_h_12_PRIVATE_PROPERTY_OFFSET \
+#define STATE_DonkeyKong_USFX__master_Source_DonkeyKong_USFX_DonkeyKong_USFXCharacter_h_12_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__SideViewCameraComponent() { return STRUCT_OFFSET(ADonkeyKong_USFXCharacter, SideViewCameraComponent); } \
 	FORCEINLINE static uint32 __PPO__CameraBoom() { return STRUCT_OFFSET(ADonkeyKong_USFXCharacter, CameraBoom); } \
 	FORCEINLINE static uint32 __PPO__leftmin() { return STRUCT_OFFSET(ADonkeyKong_USFXCharacter, leftmin); } \
@@ -68,27 +68,27 @@ public: \
 	FORCEINLINE static uint32 __PPO__posicionActual() { return STRUCT_OFFSET(ADonkeyKong_USFXCharacter, posicionActual); }
 
 
-#define STATE_Source_DonkeyKong_USFX_DonkeyKong_USFXCharacter_h_9_PROLOG
-#define STATE_Source_DonkeyKong_USFX_DonkeyKong_USFXCharacter_h_12_GENERATED_BODY_LEGACY \
+#define STATE_DonkeyKong_USFX__master_Source_DonkeyKong_USFX_DonkeyKong_USFXCharacter_h_9_PROLOG
+#define STATE_DonkeyKong_USFX__master_Source_DonkeyKong_USFX_DonkeyKong_USFXCharacter_h_12_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	STATE_Source_DonkeyKong_USFX_DonkeyKong_USFXCharacter_h_12_PRIVATE_PROPERTY_OFFSET \
-	STATE_Source_DonkeyKong_USFX_DonkeyKong_USFXCharacter_h_12_SPARSE_DATA \
-	STATE_Source_DonkeyKong_USFX_DonkeyKong_USFXCharacter_h_12_RPC_WRAPPERS \
-	STATE_Source_DonkeyKong_USFX_DonkeyKong_USFXCharacter_h_12_INCLASS \
-	STATE_Source_DonkeyKong_USFX_DonkeyKong_USFXCharacter_h_12_STANDARD_CONSTRUCTORS \
+	STATE_DonkeyKong_USFX__master_Source_DonkeyKong_USFX_DonkeyKong_USFXCharacter_h_12_PRIVATE_PROPERTY_OFFSET \
+	STATE_DonkeyKong_USFX__master_Source_DonkeyKong_USFX_DonkeyKong_USFXCharacter_h_12_SPARSE_DATA \
+	STATE_DonkeyKong_USFX__master_Source_DonkeyKong_USFX_DonkeyKong_USFXCharacter_h_12_RPC_WRAPPERS \
+	STATE_DonkeyKong_USFX__master_Source_DonkeyKong_USFX_DonkeyKong_USFXCharacter_h_12_INCLASS \
+	STATE_DonkeyKong_USFX__master_Source_DonkeyKong_USFX_DonkeyKong_USFXCharacter_h_12_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define STATE_Source_DonkeyKong_USFX_DonkeyKong_USFXCharacter_h_12_GENERATED_BODY \
+#define STATE_DonkeyKong_USFX__master_Source_DonkeyKong_USFX_DonkeyKong_USFXCharacter_h_12_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	STATE_Source_DonkeyKong_USFX_DonkeyKong_USFXCharacter_h_12_PRIVATE_PROPERTY_OFFSET \
-	STATE_Source_DonkeyKong_USFX_DonkeyKong_USFXCharacter_h_12_SPARSE_DATA \
-	STATE_Source_DonkeyKong_USFX_DonkeyKong_USFXCharacter_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
-	STATE_Source_DonkeyKong_USFX_DonkeyKong_USFXCharacter_h_12_INCLASS_NO_PURE_DECLS \
-	STATE_Source_DonkeyKong_USFX_DonkeyKong_USFXCharacter_h_12_ENHANCED_CONSTRUCTORS \
+	STATE_DonkeyKong_USFX__master_Source_DonkeyKong_USFX_DonkeyKong_USFXCharacter_h_12_PRIVATE_PROPERTY_OFFSET \
+	STATE_DonkeyKong_USFX__master_Source_DonkeyKong_USFX_DonkeyKong_USFXCharacter_h_12_SPARSE_DATA \
+	STATE_DonkeyKong_USFX__master_Source_DonkeyKong_USFX_DonkeyKong_USFXCharacter_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+	STATE_DonkeyKong_USFX__master_Source_DonkeyKong_USFX_DonkeyKong_USFXCharacter_h_12_INCLASS_NO_PURE_DECLS \
+	STATE_DonkeyKong_USFX__master_Source_DonkeyKong_USFX_DonkeyKong_USFXCharacter_h_12_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -96,7 +96,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> DONKEYKONG_USFX_API UClass* StaticClass<class ADonkeyKong_USFXCharacter>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID STATE_Source_DonkeyKong_USFX_DonkeyKong_USFXCharacter_h
+#define CURRENT_FILE_ID STATE_DonkeyKong_USFX__master_Source_DonkeyKong_USFX_DonkeyKong_USFXCharacter_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
